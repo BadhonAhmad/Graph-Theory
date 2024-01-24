@@ -1,40 +1,57 @@
+/**Everyone who is taken by death asks for more time, while 
+everyone who has time makes excuses for procrastination.
+--Ali Ibn Abi Talib(Ra)**/
+
+
 #include <bits/stdc++.h>
-#define fastio  ios_base::sync_with_stdio(false); cin.tie(NULL);
-#define int long long
-#define vll vector<int>
-#define all(a) a.begin(), a.end()
-#define pb(a) push_back(a)
-#define nl cout<<"\n"
-#define as cout << ans << "\n"
-#define yn cout << (f? "YES":"NO") << "\n"
-const int N=2e5+10;
 using namespace std;
-/**********************************************************************/
-int32_t main()
-{
-    fastio;
-    int ct,tc, f = 0, sum = 0, ans = 0, t,x, y, z, i, j,k, a, b, c, n, m;
-    cin >> tc;
-    while (tc--)
-    {  
-        ans = 0,ct = 0,f = 0,sum = 0;  
-        cin >> n >>m;
-        vll indeg(n+2,0);
-        for(i = 0; i < n-1; i++){
-            cin >> x >> y;
-            ++indeg[y];
-            ++indeg[x];
+
+#define int long long
+#define N 100005
+
+bitset<N> vis;
+int indeg[N];
+int32_t main(){
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+
+    int n,m,a,b,t;
+    cin >> n >> m;
+    vector<vector<int>>adj(n);
+    memset(indeg, 0, sizeof(indeg));
+
+    for(int i = 0; i < m; i++){
+        cin >> a >> b;
+        a--,b--;
+        adj[a].push_back(b);
+        indeg[b]++;
+    }
+    vector<int> path;
+    priority_queue<int, vector<int>,greater<int>> pq;
+    for(int i = 0; i < n; i++){
+        if(indeg[i] == 0){
+            pq.push(i);
+            vis[i] = true;
         }
-        if(indeg[m]<=1){
-            cout << "Ayush\n";
-            continue;
+    }
+    while (!pq.empty())
+    {
+        t = pq.top();
+        pq.pop();
+        path.push_back(t);
+        for(int v : adj[t]){
+            if(--indeg[v] == 0){
+                vis[v] = true;
+                pq.push(v);
+            }
         }
-        if(!(n%2)){
-            cout << "Ayush\n";
+    }
+    if(path.size() != n) cout << "Sandro fails.\n";
+    else{
+        for(int i = 0; i < n; i++){
+            cout << path[i] + 1<< ' ';
         }
-        else
-            cout << "Ashish\n";
+        cout << '\n';
     }
     return 0;
 }
-
