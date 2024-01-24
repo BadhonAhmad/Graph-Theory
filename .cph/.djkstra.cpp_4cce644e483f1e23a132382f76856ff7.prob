@@ -1,0 +1,1 @@
+{"name":"Local: djkstra","url":"d:\\data_strcuture_coding_cpp\\djkstra.cpp","tests":[{"id":1669907993451,"input":"7 10\n1 3 1\n1 4 6\n2 6 1\n4 2 2\n2 7 5\n3 6 8\n3 4 2\n5 4 9\n5 6 2\n7 5 1","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\data_strcuture_coding_cpp\\djkstra.cpp","group":"local","local":true}

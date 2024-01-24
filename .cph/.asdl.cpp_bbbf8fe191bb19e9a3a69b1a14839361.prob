@@ -1,0 +1,1 @@
+{"name":"Local: asdl","url":"d:\\data_strcuture_coding_cpp\\asdl.cpp","tests":[{"id":1677214982652,"input":"5\n3\n14\n15\n24\n1","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\data_strcuture_coding_cpp\\asdl.cpp","group":"local","local":true}

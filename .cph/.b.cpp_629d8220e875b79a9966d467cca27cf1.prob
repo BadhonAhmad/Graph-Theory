@@ -1,0 +1,1 @@
+{"name":"Local: b","url":"d:\\data_strcuture_coding_cpp\\b.cpp","tests":[{"id":1670559873214,"input":"XWY\nZX\nZXY\nZXW\nYWWX\n#","output":"XZYW"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\data_strcuture_coding_cpp\\b.cpp","group":"local","local":true}

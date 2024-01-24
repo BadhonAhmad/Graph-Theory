@@ -1,0 +1,1 @@
+{"name":"Local: ct","url":"d:\\data_strcuture_coding_cpp\\ct.cpp","tests":[{"id":1672679373159,"input":"3\n2 10\n4 4\n20 8","output":"1\n1\n5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\data_strcuture_coding_cpp\\ct.cpp","group":"local","local":true}

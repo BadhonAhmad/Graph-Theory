@@ -1,0 +1,1 @@
+{"name":"Local: bfs_luv","url":"d:\\data_strcuture_coding_cpp\\bfs_luv.cpp","tests":[{"id":1667998718325,"input":"13\n1 2\n1 3\n1 13\n2 5\n5 6\n5 7\n5 8\n8 12\n3 4\n4 9\n4 10\n10 11\n9 11","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\data_strcuture_coding_cpp\\bfs_luv.cpp","group":"local","local":true}
