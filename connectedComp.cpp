@@ -38,6 +38,7 @@ int main()
     }
 
     cout << path.size()  << '\n';
+    
     for(auto i : path){
         for(auto j : i){
             cout << j << ' ';

@@ -1,9 +1,11 @@
 #include<bits/stdc++.h>
 using namespace std;
 const int N = 1e5 + 10;
+
 int vis[N];
 vector<int> g[N];
 int level[N];
+
 void bfs(int source){
     queue<int> q;
     q.push(source);
@@ -38,5 +40,5 @@ int main()
     for (int i = 1; i <= n; i++)
     {
         cout << i << ": " << level[i] << endl;
-    } 
+    }
 }
