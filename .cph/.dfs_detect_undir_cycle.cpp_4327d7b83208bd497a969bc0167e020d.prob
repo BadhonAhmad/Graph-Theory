@@ -1,0 +1,1 @@
+{"name":"Local: dfs_detect_undir_cycle","url":"d:\\data_strcuture_coding_cpp\\dfs_detect_undir_cycle.cpp","tests":[{"id":1707919746093,"input":"4 3\n1 2\n2 3\n1 4","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\data_strcuture_coding_cpp\\dfs_detect_undir_cycle.cpp","group":"local","local":true}
