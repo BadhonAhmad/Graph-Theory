@@ -1,0 +1,1 @@
+{"name":"Local: bfs_bipartite","url":"d:\\data_strcuture_coding_cpp\\bfs_bipartite.cpp","tests":[{"id":1707988838697,"input":"4 4\n1 2 \n2 3 \n3 4 \n4 1","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\data_strcuture_coding_cpp\\bfs_bipartite.cpp","group":"local","local":true}

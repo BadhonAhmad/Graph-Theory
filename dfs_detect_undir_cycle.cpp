@@ -4,7 +4,6 @@ const int N = 1e5+10;
 vector<vector<int>> adj(N);
 bool vis[N] = {0};
 
-
 bool detect(int src, int p){
     vis[src] = 1;
     for(auto it : adj[src]){
@@ -24,6 +23,7 @@ int main()
 {
     int i, n, m;
     cin >> n >> m;
+
     for(i = 0; i < m; i++){
         int a, b;
         cin >> a >> b;
@@ -32,6 +32,7 @@ int main()
     }
 
     bool ans = detect(1,-1);
+
     if(ans){
         cout << "Cycle found\n";
     }
