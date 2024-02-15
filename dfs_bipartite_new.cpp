@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 const int N = 1e5+10;
-vector< vector<int>> adj(N);
+vector< vector<int> > adj(N);
 vector<int > color(N, -1);
 
 bool dfs(int src,int col){
