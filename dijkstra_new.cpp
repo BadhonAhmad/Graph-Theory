@@ -33,6 +33,7 @@ void dijkstra(int s, vector<int> &dist, vector<int> &p)
         }
     }
 }
+
 vector<int> restore_path(int s, int t, vector<int> &p)
 {
     vector<int> path;
@@ -54,10 +55,11 @@ int32_t main()
         cin >> u >> v >> wt;
         adj[u].push_back({v, wt});
     }
-    vector<int> d, p;
-    dijkstra(0, d, p);
+    vector<int> dist, p;
+    dijkstra(0, dist, p);
+
     for (int i = 0; i < n; i++)
-        cout << d[i] << " ";
+        cout << dist[i] << " ";
     cout << endl;
     vector<int> path = restore_path(0, 5, p);
     for (int i = 0; i < path.size(); i++)
