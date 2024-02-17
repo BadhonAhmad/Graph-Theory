@@ -8,8 +8,7 @@ long long par[sz], cost[sz];
 bool dijkstra(long long st, long long en)
 {
     // 1.pq te push
-   priority_queue< pair<long long,long long> ,
-    vector< pair<long long,long long> >, greater< pair<long long,long long> > > pq;
+    priority_queue<pair<long long, long long>,vector<pair<long long, long long>>, greater<pair<long long, long long>>> pq;
     pq.push({0, st});
     cost[st] = 0;
     long long u, c;
@@ -18,14 +17,14 @@ bool dijkstra(long long st, long long en)
     {
         u = pq.top().second;
         c = pq.top().first;
-        if(u== en)
+        if (u == en)
             return true;
         pq.pop();
 
         // 3.for diye tar sokol adj e jabe
         for (long long i = 0; i < adj[u].size(); i++)
         {
-            if ( c + w[u][i] < cost[adj[u][i]])
+            if (c + w[u][i] < cost[adj[u][i]])
             {
                 cost[adj[u][i]] = c + w[u][i];
                 pq.push({cost[adj[u][i]], adj[u][i]});
@@ -56,24 +55,25 @@ signed main()
         adj[y].push_back(x);
         w[x].push_back(z);
         w[y].push_back(z);
-    } 
-    long long st=1, en=n;
-   // cin >> st >> en;
-   bool ans= dijkstra(st-1, en-1);
+    }
+    long long st = 1, en = n;
+
+    bool ans = dijkstra(st - 1, en - 1);
     x = en - 1;
     vector<long long> res;
     while (~x)
     {
-        res.push_back(x+1);
+        res.push_back(x + 1);
         x = par[x];
     }
     reverse(res.begin(), res.end());
-   if(ans){
-    for (size_t i = 0; i < res.size(); i++)
+    if (ans)
     {
-        cout << res[i] << " ";
+        for (size_t i = 0; i < res.size(); i++)
+        {
+            cout << res[i] << " ";
+        }
     }
-   }
-   else
-       cout<<-1;
+    else
+        cout << -1;
 }

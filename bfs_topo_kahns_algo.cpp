@@ -24,6 +24,7 @@ int main()
     }
 
     vector<int> topo;
+    
     while (!q.empty())
     {
         int node = q.front();
